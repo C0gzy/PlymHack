@@ -6,12 +6,15 @@ interface CountdownProps {
 }
 
 export function Countdown({ targetDate }: CountdownProps) {
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
+  type TimeUnit = "days" | "hrs" | "mins" | "secs"
+  type TimeLeft = Partial<Record<TimeUnit, number>>
+
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft())
   const targetYear = targetDate.getFullYear()
 
-  function calculateTimeLeft() {
+  function calculateTimeLeft(): TimeLeft {
     const difference = +targetDate - +new Date()
-    let timeLeft = {}
+    let timeLeft: TimeLeft = {}
 
     if (difference > 0) {
       timeLeft = {
@@ -33,15 +36,14 @@ export function Countdown({ targetDate }: CountdownProps) {
     return () => clearTimeout(timer)
   })
 
-  const timerComponents = Object.keys(timeLeft).map((interval) => {
-    if (!timeLeft[interval]) {
-      return null
-    }
-
+  const units: TimeUnit[] = ["days", "hrs", "mins", "secs"]
+  const timerComponents = units.map((unit) => {
+    const value = timeLeft[unit]
+    if (value == null) return null
     return (
-      <div key={interval} className="text-center">
-        <span className="md:text-8xl text-4xl font-bold">{timeLeft[interval]}</span>
-        <span className="md:text-m text-sm uppercase">{interval}</span>
+      <div key={unit} className="text-center">
+        <span className="md:text-8xl text-4xl font-bold">{value}</span>
+        <span className="md:text-m text-sm uppercase">{unit}</span>
       </div>
     )
   })
