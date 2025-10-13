@@ -51,19 +51,8 @@ export function NavBar() {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="flex flex-col space-y-4">
-                <Link href="/plymhack" className="text-sm font-medium hover:text-primary">
+                <Link href="/" className="text-sm font-medium hover:text-primary">
                   PlymHack
-                </Link>
-                <Link href="/events" className="text-sm font-medium hover:text-primary">
-                  Events
-                </Link>
-                {/*
-                <Link href="/committee" className="text-sm font-medium hover:text-primary">
-                  Committee
-                </Link>
-                */}
-                <Link href="https://www.upsu.com/societies/compsoc/" className="text-sm font-medium hover:text-primary">
-                  Memberships
                 </Link>
                 <Link href="/contact" className="text-sm font-medium hover:text-primary">
                   Contact Us
