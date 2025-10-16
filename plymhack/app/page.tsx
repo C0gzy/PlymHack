@@ -35,7 +35,7 @@ export default function PlyHackPage() {
           </p>
           <ul className="list-disc list-inside space-y-2">
             <li>Date: Early February 2026</li>
-            <li>Location: Plymouth University, Davy Building Main Hall</li>
+            <li>Location: TBD</li>
             <li>Duration: 24 hours</li>
           </ul>
           <Button asChild size="lg" className="mt-12 w-full text-white sm:w-auto bg-pink-500 hover:bg-pink-600">
