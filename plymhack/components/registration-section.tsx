@@ -8,7 +8,7 @@ export function RegistrationSection() {
     <section id="register" className="py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <Card className="overflow-hidden">
-          <CardHeader className="text-center">
+          <CardHeader className="text-center text-white">
             <CardTitle className="text-3xl md:text-4xl font-extrabold tracking-tight">
               Ready to build something unforgettable?
             </CardTitle>

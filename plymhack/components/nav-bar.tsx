@@ -13,6 +13,7 @@ export function NavBar() {
   return (
     <header className="fixed top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
       <div className="flex pl-16 pr-16 h-16 items-center justify-between">
+        
         <Link href="/" className="flex items-center space-x-2">
           <img
             src='MainImages/PlymouthLogoBlackWhite.webp'
@@ -41,7 +42,7 @@ export function NavBar() {
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex items-center gap-2">
-          
+        
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" className="md:hidden" size="icon">
