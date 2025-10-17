@@ -42,7 +42,7 @@ export function Countdown({ targetDate }: CountdownProps) {
     if (value == null) return null
     return (
       <div key={unit} className="text-center">
-        <span className="md:text-8xl text-4xl font-bold">{value}</span>
+        <span className="md:text-8xl text-2xl font-bold">{value}</span>
         <span className="md:text-m text-sm uppercase">{unit}</span>
       </div>
     )

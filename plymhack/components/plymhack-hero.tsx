@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function PlymHackHero() {
   return (
-    <section className="relative isolate overflow-hidden bg-gradient-to-br from-purple-600 via-fuchsia-500 to-pink-500">
+    <section className="relative isolate overflow-hidden bg-gradient-to-br from-purple-600 to-fuchsia-500">
       <div className="absolute inset-0 opacity-20" aria-hidden>
         <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 800 600">
           <defs>
@@ -17,14 +17,14 @@ export function PlymHackHero() {
           <g fill="url(#g)">
             <circle cx="150" cy="100" r="120" />
             <circle cx="650" cy="120" r="90" />
-            <circle cx="400" cy="520" r="140" />
+            <circle cx="400" cy="520" r="120" />
           </g>
         </svg>
       </div>
       <div className="container mx-auto px-4 pt-72 pb-72 text-center text-white">
         <div className="mx-auto max-w-3xl space-y-6">
           <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur">
-            February 2026 • Plymouth University
+          NSBM Green University &#8203; <span className="font-bold text-lg">• 7th - 8th February 2026 • </span> &#8203; Plymouth University  
           </span>
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
             PlymHack 2026
