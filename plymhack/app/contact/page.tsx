@@ -31,11 +31,11 @@ export default function ContactPage() {
               <h2 className="text-2xl font-semibold mb-4">Email Us</h2>
               <ul className="list-disc list-inside space-y-2">
               <li>
-              <li>
               <a href="mailto:plymhack@gmail.com" className="text-primary hover:underline">
                 plymhack@gmail.com
               </a>
               </li>
+              <li>
               <a href="mailto:Thomas.Cogzell@students.plymouth.ac.uk" className="text-primary hover:underline">
                 Thomas.Cogzell@students.plymouth.ac.uk
               </a>
