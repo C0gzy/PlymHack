@@ -40,7 +40,7 @@ export default function PlyHackPage() {
             <li>Location: TBD</li>
             <li>Duration: 24 hours</li>
           </ul>
-          <Button asChild size="lg" className="mt-12 w-full text-white sm:w-auto bg-pink-500 hover:bg-pink-600">
+          <Button asChild size="lg" className="mt-12 w-full text-white sm:w-auto bg-green-500 hover:bg-green-600">
             <a style={{pointerEvents: "none"}} href="https://plymhack.com" target="_blank" rel="noopener noreferrer">
               Registration opens soon
             </a>

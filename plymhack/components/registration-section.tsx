@@ -8,7 +8,7 @@ export function RegistrationSection() {
     <section id="register" className="py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <Card className="overflow-hidden">
-          <CardHeader className="text-center text-white">
+          <CardHeader className="text-center">
             <CardTitle className="text-3xl md:text-4xl font-extrabold tracking-tight">
               Ready to build something unforgettable?
             </CardTitle>
@@ -20,7 +20,7 @@ export function RegistrationSection() {
             <div className="inline-flex rounded-xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)]">
               <Button
                 size="lg"
-                className="h-14 px-10 text-lg font-semibold bg-pink-500 text-white hover:bg-pink-600 transition-transform active:scale-[0.98]"
+                className="h-14 px-10 text-lg font-semibold bg-green-500 text-white hover:bg-green-600 transition-transform active:scale-[0.98]"
                 asChild
               >
                 <a href="#" onClick={(e) => e.preventDefault()}>Register Soon</a>

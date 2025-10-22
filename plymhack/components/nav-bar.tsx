@@ -6,6 +6,7 @@ import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { useTheme } from "next-themes"
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,12 +16,11 @@ export function NavBar() {
       <div className="flex pl-16 pr-16 h-16 items-center justify-between">
         
         <Link href="/" className="flex items-center space-x-2">
-          <img
-            src='MainImages/PlymouthLogoBlackWhite.webp'
-            alt="PLYCS Logo"
-            className="h-16"
-          />
+          {useTheme().theme === "light" ? (
+            <img src='MainImages/PlymHackLogoLight.webp' alt="PLYCS Logo" className="h-16" />
+          ) : <img src='MainImages/PlymHackLogoDark.webp' alt="PLYCS Logo" className="h-16" />}
         </Link>
+        
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
@@ -30,10 +30,10 @@ export function NavBar() {
             Committee
           </Link>
           */}          
-          <Button asChild variant="default" >
+          <Button asChild variant="default" className="text-white">
             <Link href="/">PlymHack</Link>
           </Button>
-          <Button asChild variant="default">
+          <Button asChild variant="default" className="text-white">
             <Link href="/contact">Contact Us</Link>
           </Button>
           

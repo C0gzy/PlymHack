@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function PlymHackHero() {
   return (
-    <section className="relative isolate overflow-hidden bg-gradient-to-br from-purple-600 to-fuchsia-500">
+    <section className="relative isolate overflow-hidden bg-gradient-to-br from-green-600 to-emerald-500">
 
       <div className="container mx-auto px-4 pt-72 pb-72 text-center text-white">
         <div className="mx-auto max-w-3xl space-y-6">
@@ -19,13 +19,13 @@ export function PlymHackHero() {
             24 hours. Teams. Ideas. Build something unforgettable.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-            <Button size="lg" className="bg-white text-purple-700 hover:bg-white/90">
+            <Button size="lg" className="bg-white text-green-700 hover:bg-white/90">
               Registration opens soon
             </Button>
             <Button 
-              variant="outline" 
+              variant="default"
               size="lg" 
-              className="border-white/70 text-white hover:bg-white/10"
+              className="bg-white text-black hover:bg-white/90"
               onClick={() => {
                 const element = document.querySelector('main');
                 element?.scrollIntoView({ behavior: 'smooth' });
