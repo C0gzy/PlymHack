@@ -19,9 +19,11 @@ export function PlymHackHero() {
             24 hours. Teams. Ideas. Build something unforgettable.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-            <Button size="lg" className="bg-white text-green-700 hover:bg-white/90">
-              Registration opens soon
-            </Button>
+           <Button asChild size="lg" className="w-full text-white sm:w-auto bg-green-500 hover:bg-green-600">
+            <a href="https://fixr.co/event/plymhack-2026-tickets-923319410" target="_blank" rel="noopener noreferrer">
+              Registration is open
+            </a>
+          </Button>
             <Button 
               variant="default"
               size="lg" 

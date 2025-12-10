@@ -32,7 +32,7 @@ export default function PlyHackPage() {
           <h1 className="text-4xl font-semibold mb-4">Event Information</h1>
           <p className="text-lg mb-4">
             Join us for an exciting 24-hour International hackathon where You will compete against teams from <span className="font-bold">England, Sri Lanka </span> <span>and</span> <span className="font-bold">Malaysia</span>. You'll have the opportunity to innovate, collaborate, and
-            create amazing projects! PlyHack is open to all skill levels and backgrounds. Whether you're a seasoned
+            create amazing projects! PlymHack is open to all skill levels and backgrounds. Whether you're a seasoned
             coder or just starting out, there's a place for you at PlymHack.
           </p>
           <ul className="list-disc list-inside space-y-2">
@@ -41,8 +41,8 @@ export default function PlyHackPage() {
             <li>Duration: 24 hours</li>
           </ul>
           <Button asChild size="lg" className="mt-12 w-full text-white sm:w-auto bg-green-500 hover:bg-green-600">
-            <a style={{pointerEvents: "none"}} href="https://plymhack.com" target="_blank" rel="noopener noreferrer">
-              Registration opens soon
+            <a href="https://fixr.co/event/plymhack-2026-tickets-923319410" target="_blank" rel="noopener noreferrer">
+              Registration open now!
             </a>
           </Button>
         </section>

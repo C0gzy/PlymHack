@@ -15,7 +15,7 @@ export function RegistrationSection() {
           </CardHeader>
           <CardContent className="text-center py-8">
             <p className="md:text-lg mb-8 max-w-2xl mx-auto text-muted-foreground">
-              Registration opens soon. Save your spot and join us this February.
+              Registration is open now! Save your spot and join us this February.
             </p>
             <div className="inline-flex rounded-xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)]">
               <Button
@@ -23,7 +23,7 @@ export function RegistrationSection() {
                 className="h-14 px-10 text-lg font-semibold bg-green-500 text-white hover:bg-green-600 transition-transform active:scale-[0.98]"
                 asChild
               >
-                <a href="#" onClick={(e) => e.preventDefault()}>Register Soon</a>
+                <a href="https://fixr.co/event/plymhack-2026-tickets-923319410" target="_blank">Register NOW!</a>
               </Button>
             </div>
             <p className="mt-4 text-xs text-muted-foreground">
