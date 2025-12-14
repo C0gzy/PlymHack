@@ -72,7 +72,7 @@ export function SponsorsSection() {
                   Our Partners
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                  {partners.map((partner, index) => (
+                  {partners.map((partner :any , index: any) => (
                     <Card key={index} className="border-green-200 dark:border-green-800 hover:shadow-lg transition-all duration-300 hover:border-green-400">
                       <CardContent className="p-6">
                         <p className="font-semibold text-lg mb-2">{partner.name}</p>
