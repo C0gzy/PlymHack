@@ -9,13 +9,13 @@ const stats = [
     icon: Users,
     value: "100+",
     label: "Participants",
-    description: "Expected hackers"
+    description: "Expected"
   },
   {
     icon: Code,
     value: "24",
     label: "Hours",
-    description: "Of coding & innovation"
+    description: "Of coding"
   },
   {
     icon: Globe,

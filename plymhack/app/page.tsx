@@ -44,7 +44,7 @@ export default function PlyHackPage() {
     <div className="min-h-screen bg-background">
       <NavBar />
       <PlymHackHero />
-      <main className="container mx-auto px-50 py-50 pt-24">
+      <main className="container mx-auto lg:px-50 lg:py-20 md:px-20 md:py-50 px-8 py-16 pt-24">
         {/* Enhanced Event Information Section */}
         <section className="mb-16">
           <div className="text-center mb-8">

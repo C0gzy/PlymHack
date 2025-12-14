@@ -12,7 +12,7 @@ const expectations = [
   {
     icon: Users,
     title: "Network & Collaborate",
-    description: "Meet like-minded developers, designers, and innovators from around the world."
+    description: "Meet like-minded developers from around the world."
   },
   {
     icon: Coffee,
@@ -32,7 +32,7 @@ const expectations = [
   {
     icon: PartyPopper,
     title: "Win Prizes",
-    description: "Compete for amazing prizes, swag, and bragging rights. Every participant gets something!"
+    description: "Compete for amazing prizes and bragging rights."
   },
 ]
 

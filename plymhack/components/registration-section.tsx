@@ -15,7 +15,7 @@ export function RegistrationSection() {
           </CardHeader>
           <CardContent className="text-center py-8">
             <p className="md:text-lg mb-8 max-w-2xl mx-auto text-muted-foreground">
-              Registration is open now! Save your spot and join us this February.
+              Registration is open now for Plymouth! Save your spot and join us this February.
             </p>
             <div className="inline-flex rounded-xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)]">
               <Button

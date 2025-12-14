@@ -26,7 +26,7 @@ export function NavBar() {
   }
 
   return (
-    <header className="fixed top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
+    <header className="fixed py-2 top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
       <div className="flex pl-4 md:pl-16 pr-4 md:pr-16 h-16 items-center justify-between">
         
         <Link href="/" className="flex items-center space-x-2">

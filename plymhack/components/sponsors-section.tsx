@@ -12,7 +12,7 @@ const sponsors = [
   },
   {
     name: "NSBM Green University",
-    tier: "Partner",
+    tier: "Host",
     logo: "/MainImages/nsbmlogo.png" // Add logo path when available
   },
   // Add more sponsors as they come in
@@ -91,7 +91,8 @@ export function SponsorsSection() {
                 Interested in sponsoring PlymHack 2026?
               </p>
               <a 
-                href="mailto:plymhack@gmail.com" 
+                href="/contact"
+                target="_blank"
                 className="text-green-600 dark:text-green-400 hover:underline font-semibold"
               >
                 Get in touch with us →
