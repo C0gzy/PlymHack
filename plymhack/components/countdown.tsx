@@ -49,13 +49,28 @@ export function Countdown({ targetDate }: CountdownProps) {
   })
 
   return (
-    <Card className="mb-12">
-      <CardHeader>
-        <CardTitle>Countdown to PlymHack {targetYear}</CardTitle>
+    <Card className="mb-12 border-green-200 dark:border-green-800">
+      <CardHeader className="text-center pb-4">
+        <CardTitle className="text-2xl md:text-3xl font-bold">
+          Countdown to PlymHack {targetYear}
+        </CardTitle>
+        <p className="text-muted-foreground mt-2">
+          The adventure begins in...
+        </p>
       </CardHeader>
       <CardContent>
-        <div className="flex justify-around">
-          {timerComponents.length ? timerComponents : <span className="md:text-4xl text-2xl text-center font-bold">The hackathon has Ended! Come Back Next Year!</span>}
+        <div className="flex flex-wrap justify-around gap-2 md:gap-8">
+          {timerComponents.length ? (
+            timerComponents.map((component, index) => (
+              <div key={index} className="flex flex-col items-center p-4 rounded-lg min-w-[80px] md:min-w-[120px]">
+                {component}
+              </div>
+            ))
+          ) : (
+            <span className="md:text-4xl text-2xl text-center font-bold py-8">
+              The hackathon has Ended! Come Back Next Year!
+            </span>
+          )}
         </div>
       </CardContent>
     </Card>
