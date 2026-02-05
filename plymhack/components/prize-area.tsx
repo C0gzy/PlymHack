@@ -4,7 +4,7 @@ import { Trophy, Medal, Award } from "lucide-react"
 const prizes = [
   { 
     place: "1st Place", 
-    prize: "TBD",
+    prize: "Rasberry PIs",
     winner: "",
     icon: Trophy,
     color: "from-green-500 to-emerald-500",
@@ -12,14 +12,14 @@ const prizes = [
   },
   { 
     place: "2nd Place", 
-    prize: "TBD",
+    prize: "Harribos and other sweets",
     icon: Medal,
     color: "from-green-600 to-green-700",
     bgColor: "bg-green-50 dark:bg-green-950"
   },
   { 
     place: "3rd Place", 
-    prize: "TBD",
+    prize: "",
     icon: Award,
     color: "from-green-800 to-green-900",
     bgColor: "bg-green-50 dark:bg-green-950"

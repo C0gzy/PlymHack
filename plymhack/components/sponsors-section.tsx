@@ -1,7 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Building2, Heart } from "lucide-react"
+import { Building2, Heart, ExternalLink } from "lucide-react"
 
 // Add your sponsors here - you can add logos, links, etc.
 const sponsors = [
@@ -71,13 +71,30 @@ export function SponsorsSection() {
                   <Heart className="h-6 w-6 text-green-500" />
                   Our Partners
                 </h3>
-                <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <div className="flex flex-wrap gap-6 justify-center max-w-3xl mx-auto">
                   {partners.map((partner :any , index: any) => (
-                    <Card key={index} className="border-green-200 dark:border-green-800 hover:shadow-lg transition-all duration-300 hover:border-green-400">
-                      <CardContent className="p-6">
-                        <p className="font-semibold text-lg mb-2">{partner.name}</p>
+                    <Card 
+                      key={index} 
+                      className="border-green-200 dark:border-green-800 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 hover:border-green-500 dark:hover:border-green-400 hover:bg-green-50 dark:hover:bg-green-950/30 cursor-pointer flex-[1_1_300px] max-w-md"
+                      onClick={() => partner.link && window.open(partner.link, '_blank', 'noopener,noreferrer')}
+                    >
+                      <CardContent className="p-6 flex flex-col items-center justify-center">
+                        {partner.logo && (
+                          <img 
+                            src={partner.logo} 
+                            alt={partner.name}
+                            className="max-h-20 object-contain mb-4"
+                          />
+                        )}
+                        <p className="font-semibold text-lg mb-2 text-center">{partner.name}</p>
                         {partner.description && (
-                          <p className="text-muted-foreground text-sm">{partner.description}</p>
+                          <p className="text-muted-foreground text-sm mb-2 text-center">{partner.description}</p>
+                        )}
+                        {partner.link && (
+                          <div className="flex items-center gap-1 text-green-600 dark:text-green-400 mt-2">
+                            <span className="text-sm font-medium">Visit Website</span>
+                            <ExternalLink className="h-4 w-4" />
+                          </div>
                         )}
                       </CardContent>
                     </Card>

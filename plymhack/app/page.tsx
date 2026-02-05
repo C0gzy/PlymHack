@@ -16,6 +16,7 @@ import { StatsSection } from "@/components/stats-section"
 import { ArrowUp } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Calendar, MapPin, Clock } from "lucide-react"
+import { Footer } from "@/components/footer"
 
 export default function PlyHackPage() {
   const [mounted, setMounted] = useState(false)
@@ -84,7 +85,7 @@ export default function PlyHackPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Location</h3>
-                    <p className="text-muted-foreground">TBD</p>
+                    <p className="text-muted-foreground">Plymouth University Smeaton Building, SMB 103</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -134,6 +135,7 @@ export default function PlyHackPage() {
           <ArrowUp className="h-6 w-6" />
         </button>
       )}
+      <Footer />
     </div>
   )
 }
