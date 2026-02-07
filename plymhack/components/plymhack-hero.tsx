@@ -6,10 +6,10 @@ import Link from "next/link"
 export function PlymHackHero() {
   return (
     <section className="relative isolate overflow-hidden bg-gradient-to-br from-green-600 to-emerald-500">
+      <div dangerouslySetInnerHTML={{ __html: '<!-- she_sells_SEA_SHELLS -->' }} />
       <div className="container mx-auto px-4 pt-72 pb-72 text-center text-white">
         <div className="mx-auto max-w-3xl space-y-6">
           <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur">
-          <span className="sr-only">she_sells_SEA_SHELLS</span>
           NSBM Green University &#8203; <span className="font-bold text-lg">• 7th - 8th February 2026 • </span> &#8203; Plymouth University  
           </span>
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
