@@ -6,7 +6,6 @@ import Link from "next/link"
 export function PlymHackHero() {
   return (
     <section className="relative isolate overflow-hidden bg-gradient-to-br from-green-600 to-emerald-500">
-      <div dangerouslySetInnerHTML={{ __html: '<!-- she_sells_SEA_SHELLS -->' }} />
       <div className="container mx-auto px-4 pt-72 pb-72 text-center text-white">
         <div className="mx-auto max-w-3xl space-y-6">
           <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur">
