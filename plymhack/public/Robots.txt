@@ -1,0 +1,38 @@
+
+QUESTION:
+
+
+Rolan is a carpenter aboard a long-voyage ship.
+
+To prepare the ship’s deck for the journey ahead, Rolan needs to build wooden tables for the crew. Crafting a single wooden table requires 'C' pieces of wood, which are obtained from the ship’s stored timber.
+
+Rolan has a tool pouch with limited space that can hold both wood and completed tables. The pouch has 'N' slots. Each slot can contain either:
+
+one completed wooden table, or
+
+a pile of wood containing at most 'P' pieces.
+
+At the beginning, Rolan has 'W' pieces of wood, which she may distribute arbitrarily among the 'N' slots.
+
+To craft a wooden table, Rolan removes 'C' pieces of wood from any combination of slots. If a pile of wood becomes empty, its slot becomes free. If there is no free slot available, crafting immediately stops. Otherwise, the newly crafted table is placed into a free slot.
+
+Rolan continues crafting tables as long as possible.
+
+
+
+
+Input Format
+
+A single line containing four integers
+C, N, P, and W.
+
+Output Format
+
+Output a single integer — the number of wooden tables that Rolan can craft.
+
+Constraints
+
+1≤𝐶,𝑁,𝑃,𝑊≤10^15
+
+W≤N×P
+
